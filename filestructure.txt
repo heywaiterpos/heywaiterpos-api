@@ -1,0 +1,157 @@
+|-- .env
+|-- .eslintrc.js
+|-- .gitignore
+|-- .prettierrc
+|-- db
+    |-- schema
+        |-- 2025-02-08.sql
+|-- LICENSE
+|-- nest-cli.json
+|-- package-lock.json
+|-- package.json
+|-- README.md
+|-- src
+    |-- app.controller.spec.ts
+    |-- app.controller.ts
+    |-- app.module.ts
+    |-- app.service.ts
+    |-- common
+        |-- constants
+            |-- api-response.constant.ts
+            |-- auth-error.constant.ts
+            |-- auth-method.constant.ts
+            |-- auth-status.constant.ts
+            |-- auth-token-type.constant.ts
+            |-- user.constant.ts
+        |-- utils
+            |-- utils.ts
+    |-- controller
+        |-- auth
+            |-- auth.controller.spec.ts
+            |-- auth.controller.ts
+            |-- auth.module.ts
+            |-- auth.service.spec.ts
+            |-- auth.service.ts
+            |-- dto
+                |-- login.dto.ts
+                |-- register.dto.ts
+            |-- strategies
+                |-- google.strategy.ts
+                |-- jwt.strategy.ts
+                |-- local.strategy.ts
+            |-- token.service.spec.ts
+            |-- token.service.ts
+        |-- categories
+            |-- categories.controller.spec.ts
+            |-- categories.controller.ts
+            |-- categories.module.ts
+            |-- categories.service.spec.ts
+            |-- categories.service.ts
+            |-- dto
+                |-- create-category.dto.ts
+                |-- update-category.dto.ts
+            |-- entities
+                |-- category.entity.ts
+        |-- goods-issue
+            |-- dto
+                |-- create-goods-issue.dto.ts
+                |-- update-goods-issue.dto.ts
+            |-- entities
+                |-- goods-issue.entity.ts
+            |-- goods-issue.controller.spec.ts
+            |-- goods-issue.controller.ts
+            |-- goods-issue.module.ts
+            |-- goods-issue.service.spec.ts
+            |-- goods-issue.service.ts
+        |-- goods-receipt
+            |-- dto
+                |-- create-goods-receipt.dto.ts
+                |-- update-goods-receipt.dto.ts
+            |-- entities
+                |-- goods-receipt.entity.ts
+            |-- goods-receipt.controller.spec.ts
+            |-- goods-receipt.controller.ts
+            |-- goods-receipt.module.ts
+            |-- goods-receipt.service.spec.ts
+            |-- goods-receipt.service.ts
+        |-- inventory
+            |-- dto
+                |-- create-inventory.dto.ts
+                |-- update-inventory.dto.ts
+            |-- entities
+                |-- inventory.entity.ts
+            |-- inventory.controller.spec.ts
+            |-- inventory.controller.ts
+            |-- inventory.module.ts
+            |-- inventory.service.spec.ts
+            |-- inventory.service.ts
+        |-- orders
+            |-- dto
+                |-- create-order.dto.ts
+                |-- update-order.dto.ts
+            |-- entities
+                |-- order.entity.ts
+            |-- orders.controller.spec.ts
+            |-- orders.controller.ts
+            |-- orders.module.ts
+            |-- orders.service.spec.ts
+            |-- orders.service.ts
+        |-- products
+            |-- dto
+                |-- create-product.dto.ts
+                |-- update-product.dto.ts
+            |-- entities
+                |-- product.entity.ts
+            |-- products.controller.spec.ts
+            |-- products.controller.ts
+            |-- products.module.ts
+            |-- products.service.spec.ts
+            |-- products.service.ts
+        |-- roles
+            |-- dto
+                |-- create-role.dto.ts
+                |-- update-role.dto.ts
+            |-- entities
+                |-- role.entity.ts
+            |-- roles.controller.spec.ts
+            |-- roles.controller.ts
+            |-- roles.module.ts
+            |-- roles.service.spec.ts
+            |-- roles.service.ts
+        |-- users
+            |-- dto
+                |-- create-user.dto.ts
+                |-- update-user.dto.ts
+            |-- users.controller.spec.ts
+            |-- users.controller.ts
+            |-- users.module.ts
+            |-- users.service.spec.ts
+            |-- users.service.ts
+    |-- core
+        |-- interfaces
+            |-- login-status.interface.ts
+            |-- payload.interface.ts
+            |-- regisration-status.interface.ts
+            |-- tokenPayload.interface.ts
+        |-- models
+            |-- api-response.model.ts
+    |-- db
+        |-- entities
+            |-- Access.ts
+            |-- UserAuth.ts
+            |-- UserAuthLog.ts
+            |-- Users.ts
+        |-- ormconfig.json
+        |-- print-entities.js
+        |-- tsconfig.json
+        |-- typeorm
+            |-- typeorm.service.ts
+    |-- main.ts
+    |-- services
+|-- test
+    |-- app.e2e-spec.ts
+    |-- jest-e2e.json
+|-- tsconfig.build.json
+|-- tsconfig.json
+|-- vercel.json
+|-- _README.md
