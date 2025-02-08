@@ -152,9 +152,6 @@
             |-- typeorm.service.ts
     |-- main.ts
     |-- services
-|-- test
-    |-- app.e2e-spec.ts
-    |-- jest-e2e.json
 |-- tsconfig.json
 |-- vercel.json
 |-- _README.md
