@@ -2,6 +2,9 @@
 |-- .eslintrc.js
 |-- .gitignore
 |-- .prettierrc
+|-- .vercel
+    |-- project.json
+    |-- README.txt
 |-- db
     |-- schema
         |-- 2025-02-08.sql
