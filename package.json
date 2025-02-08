@@ -23,9 +23,6 @@
     "test:e2e": "jest --config ./test/jest-e2e.json",
     "typeorm-model-generator": "npx typeorm-model-generator -h localhost -d heywaiterposdb -u postgres -x admin123 --ssl false -e postgres -s dbo -p 5432 -o src/db"
   },
-  "engines": {
-    "node": ">=16 <=18"
-  },
   "dependencies": {
     "@firebase/auth": "^1.8.2",
     "@firebase/storage": "^0.13.5",
