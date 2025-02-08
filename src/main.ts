@@ -46,11 +46,7 @@ async function bootstrap() {
   const port: number = config.get<number>("PORT");
   app.useGlobalPipes(new ValidationPipe({ whitelist: true, transform: true }));
   await app.listen(port, () => {
-    console.log(
-      `[WEB] ${config.get<string>("BASE_URL")}:${config.get<string>(
-        "PORT"
-      )}/swagger`
-    );
+    console.log(`[WEB] ${config.get<string>("BASE_URL")}:${port}/swagger`);
   });
 }
 bootstrap();
