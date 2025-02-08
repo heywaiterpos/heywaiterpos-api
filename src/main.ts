@@ -7,10 +7,17 @@ import { ConfigService } from "@nestjs/config";
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
   const config: ConfigService = app.get(ConfigService);
+  app.enableCors({
+    origin: true,
+    methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+    preflightContinue: false,
+    optionsSuccessStatus: 204,
+    credentials: true,
+  });
 
   const options = new DocumentBuilder()
-    .setTitle("API Documentation")
-    .setDescription("API documentation for the project")
+    .setTitle("heywaiterpos-api")
+    .setDescription("API documentation for heywaiterpos-api")
     .setVersion("1.0")
     .addBearerAuth(
       { type: "http", scheme: "bearer", bearerFormat: "JWT", in: "header" },

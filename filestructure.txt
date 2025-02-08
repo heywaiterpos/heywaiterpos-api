@@ -5,6 +5,7 @@
 |-- db
     |-- schema
         |-- 2025-02-08.sql
+        |-- 2025-02-09.sql
 |-- LICENSE
 |-- nest-cli.json
 |-- package-lock.json
